@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>支付成功</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <link rel="stylesheet" href="../static/css/reset.css"/>
+        <style>
+            #loadingdiv>.prompt_box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 5.2rem;
+                height: 2.2rem;
+                margin: auto;
+                background: #fff;
+                border-radius: 5px;
+            }
+            
+            .prompt_box>p {
+                font-size: .28rem;
+                height: 0.6rem;
+                color: #606666;
+                line-height: 1rem;
+                text-align: center;
+            }
+            
+            .prompt_box .close_btn {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: .5rem;
+            }
+            
+            .close_btn span {
+                display: block;
+                font-size: .3rem;
+                width: 1.6rem;
+                margin: 0 auto;
+                line-height: 0.72rem;
+                color: #fff;
+                background: -webkit-linear-gradient(left, #ffeb01, #fecc66);
+                background: linear-gradient(to right, #ffeb01, #fecc66);
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="layer" id="loadingdiv">
+            <div class="prompt_box">
+                <p>您的支付已成功</p>
+                <div class="close_btn success_close">
+                    <span onclick="javascript:window.location.href='../index.html?'">好的</span>
+                </div>
+            </div>
+        </div>
+        <script src="../static/js/common.js"></script>
+        
+       <script>
+           localStorage.setItem("goPersonal","1");
+       </script>
+    </body>
+</html>
