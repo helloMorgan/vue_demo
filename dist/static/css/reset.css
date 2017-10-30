@@ -1,0 +1,221 @@
+/*初始化*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+}
+html,body{
+	width: 100%;
+	height: inherit;
+	/*overflow-x: hidden;*/
+}
+*{
+	font-family: "microsoft yahei";
+	color: #333333;
+	box-sizing: border-box;
+}
+:focus {
+	outline: 1;
+}
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+li{
+    list-style:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+input, select {
+    vertical-align:middle;
+}
+button{border: none;}
+i{font-style:normal}
+.mui-content {
+    background-color: #FAFAFA;
+    -webkit-overflow-scrolling: touch;
+}
+.mui-bar,.mui-card{background-color: #FFFFFF;-webkit-box-shadow: 0 1px 6px #EDEDED;box-shadow: 0 1px 6px #EDEDED;}
+/*提示框*/
+.mui-popup-title{font-size: 0.28rem;color: #333333;}
+.mui-popup-button{font-size: 0.30rem;color: #333333;font-weight:inherit!important;}
+.mui-popup-text p{font-size: 0.28rem;color: #333333;}
+.fontWeightBolder{font-weight: bold!important;}
+/*公共样式*/
+html,body{background:#fafafa ;}
+.marginTop30{margin-top: 0.3rem;}
+.marginBottom30{margin-bottom: 0.3rem;}
+.marginBottom32{margin-bottom: 0.32rem;}
+.marginTop20{margin-top: 0.2rem;}
+.marginBottom20{margin-bottom: 0.2rem;}
+.marginLeft20{margin-left: 0.2rem;}
+.marginRight20{margin-right: 0.2rem;}
+.color-green{color: #30cfb6;}
+.color-orange{color: #eb661e;}
+.color-red{color: #f42d2d;}
+.color-black{color: #333333;}
+.color-darkgrey{color:#888888;}
+.color-grey{color: #ededed}
+.color-77{color: #777777;}
+.color-white{color: #FFFFFF;}
+.fontSize36{font-size: 0.36rem;}
+.fontSize30{font-size: 0.3rem;}
+.fontSize28{font-size: 0.28rem;}
+.fontSize26{font-size: 0.26rem;}
+.fontSize24{font-size: 0.24rem;}
+.fontSize20{font-size: 0.2rem;}
+.lineheight36{line-height: 0.36rem;}
+.lineheight30{line-height: 0.3rem;}
+.lineheight28{line-height: 0.28rem;}
+.lineheight26{line-height: 0.26rem;}
+.lineheight24{line-height: 0.24rem;}
+.lineheight20{line-height: 0.2rem;}
+/*| 热门 标题*/
+.btn:active{
+	opacity: 0.5;
+}
+/*显示隐藏*/
+.hide{display: none;}
+/*初始化mui*/
+.mui-backdrop{
+	    background-color: rgba(0,0,0,.5);
+}
+#app{padding-bottom: 0.98rem;}
+.mui-toast-container{top:5rem;bottom: inherit;}
+.mui-table-view-cell:after{background-color: #EDEDED;}
+/*底部*/
+.footer-con{
+	position: fixed;
+	width: 100%;
+	height: 0.98rem;
+	bottom: 0;
+	background: #FFFFFF;
+	z-index: 99;
+	border-top: 1px solid #EDEDED;
+}
+.btn-color,.btnColor{
+	font-size: 0.3rem;
+	text-align: center;
+	color: #FFFFFF!important;
+	background:#eb661e; /* 一些不支持背景渐变的浏览器 */  
+    background: -webkit-linear-gradient(left,#fbd43e, #eb661e); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #fbd43e,#eb661e); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #fbd43e,#eb661e); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#fbd43e, #eb661e); /* 标准的语法（必须放在最后） */
+}
+.btn-login{
+	width: 5.8rem;
+	height: 0.88rem;
+	border-radius: 5px;
+	line-height: 0.88rem;
+}
+.btn-nologin{
+	width: 5.8rem;
+	height: 0.88rem;
+	border-radius: 5px;
+	line-height: 0.88rem;
+	text-align: center;
+	font-size: 0.3rem;
+	border: 1px solid #333333;
+}
+.btn-upload{
+	width: 1.5rem;
+	height: 0.8rem;
+	border-radius: 5px;
+	line-height: 0.8rem;
+}
+.btn-block{
+	width: 100%;
+	height: 0.98rem;
+	line-height: 0.98rem;
+}
+.btn-remake{
+	width: 1.5rem;
+	height: 0.8rem;
+	border: 1px solid #333333;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+	border-radius: 5px;
+}
+.btn-confirm{
+	width: 2.5rem;
+	height: 0.88rem;
+	border-radius: 5px;
+	line-height: 0.88rem;
+}
+.btn-exit{
+	width: 2.5rem;
+	height: 0.88rem;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 0.88rem;
+	border: 1px solid #333333;
+	font-size: 0.3rem;
+}
+.btn-reservation{
+	width: 2.5rem;
+	height: 0.98rem;
+	line-height: 0.98rem;
+}
+.btn-orangeborder{
+	width: 1.64rem;
+	height: 0.64rem;
+	border: 1px solid #EB661E;
+	text-align: center;
+	line-height: 0.64rem;
+	color: #EB661E;
+	font-size: 0.3rem;
+	border-radius:5px ;
+}
+.btn-blackborder{
+	width: 1.64rem;
+	height: 0.64rem;
+	border: 1px solid #333333;
+	text-align: center;
+	line-height: 0.64rem;
+	color: #333333;
+	font-size: 0.3rem;
+	border-radius:5px ;
+}
+.mui-bar-nav~.mui-content{padding-top: 0;}
+/*轮播图图标*/
+.swiper-pagination-bullet-active {background: #FFFFFF!important;transform: scale(1.1)!important;}
+.swiper-pagination-bullet{background: #FFFFFF!important;opacity:0.4;}
+/*弹窗*/
+#loadingdiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0,0,0,0.4);
+    display: block;
+}
+#loadingdiv>img{
+   position: absolute;top:0;left:0;bottom:0;right:0;width:2.48rem;height:2.48rem;margin:auto;   
+}
